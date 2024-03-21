@@ -10,6 +10,7 @@ nav {
     position:sticky;
     width: 100%;
     z-index: 1; /* Ensure nav bar stays on top of other content */
+    
 }
 
 nav ul {
@@ -21,6 +22,7 @@ nav ul {
 
 nav li {
     float: left;
+    font-size: 40px;
 }
 
 nav li a {
