@@ -8,13 +8,14 @@ input[type="checkbox"] {
     float: right;
     margin-top: 1%;
     margin-right: 1%;
+    margin-bottom: 1%;
     -webkit-appearance: none;
     position: relative;
     background-color: #a1a1a1;
     width: 100px;
     height: 40px;
     border-radius: 20px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.5);
 }
 
 input[type="checkbox"]::before {
@@ -27,7 +28,7 @@ input[type="checkbox"]::before {
     border-radius: 20px;
     transform: scale(1.1);
     transition: 0.7s ease all;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.5);
 }
 
 input:checked[type="checkbox"]::before {
@@ -40,20 +41,26 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 10px; /* Add border radius for better appearance */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5); /* Add shadow for depth */
     float: right; /* Float the image to the right */
     margin: 20px 0 20px 20px; /* Add margin to provide spacing */
 }
 
+/* Content container styles */
+.content-container {
+    position: relative;
+    height: calc(100vh - 60px); /* Adjusted height to account for the height of the nav bar */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
 /* Content styles */
 .content {
-    margin: 1%;
-    max-width: calc(60% - 40px); /* Adjust the maximum width of the content box to accommodate the image */
+    width: 50%;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Clear the float */
-    display: inline-block; /* Ensure content and image stay in the same line */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: background-color 0.5s; /* Transition for background color */
 }
 
@@ -64,14 +71,44 @@ img {
 
 h1 {
     text-align: center;
-    font-size: 36px;
+    font-size: 50px;
 }
 
+.text-with-image {
+    overflow: hidden; /* Clear floats */
+}
+
+/* Text styles */
 p {
-    font-size: 18px;
+    font-size: 25px;
     line-height: 1.6;
+    margin-bottom: 10px; /* Add margin at the bottom of paragraphs */
 }
 
 ul {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 20px; /* Add margin to list items */
 }
+
+li {
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .content {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content-container {
+        padding-top: 60px; /* Add padding to the top of the content container to avoid overlapping with the nav bar */
+    }
+
+    .content {
+        width: 90%; /* Adjust width for even smaller screens */
+    }
+}
+
