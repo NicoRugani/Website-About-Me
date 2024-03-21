@@ -53,8 +53,8 @@ img {
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
+    padding-top: 60px; /* Add padding to the top of the content container to avoid overlapping with the nav bar */
 }
-
 /* Content styles */
 .content {
     width: 50%;
