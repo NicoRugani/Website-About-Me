@@ -10,10 +10,32 @@
 
 </head>
 <script>
-    function dark(){
+    // Function to toggle dark mode
+    function dark() {
         var element = document.body;
         element.classList.toggle("dark-mode");
+        
+        // Check if dark mode is enabled
+        var isDarkMode = element.classList.contains("dark-mode");
+        
+        // Save the dark mode preference to local storage
+        localStorage.setItem("darkMode", isDarkMode);
     }
+
+    // Function to load dark mode preference from local storage
+    function loadDarkMode() {
+        var isDarkMode = localStorage.getItem("darkMode") === "true";
+        
+        // Set dark mode class based on preference
+        if (isDarkMode) {
+            document.body.classList.add("dark-mode");
+        } else {
+            document.body.classList.remove("dark-mode");
+        }
+    }
+
+    // Load dark mode preference when the page loads
+    window.onload = loadDarkMode;
 </script>
 <body>
     <nav>
@@ -32,10 +54,13 @@
     <div class = "content-container">
         <div class="content">
             <h1>Welcome!</h1>
+            <br>
+            <br>
             <div class="text-with-image">
                 <img id="me-with-dog" src="img/IMG_2946.JPG" alt="Placeholder Image 1" width="200px">
                 <p>
-                    Hello, my name is Nicholas Rugani, or just Nico. I am an aspiring software developer out of Ballwin Missouri. I started Coding in 2022 through a program called Web and Computer programming at a technical high school called South Tech High School.
+                    Hello, my name is Nicholas Rugani, or just Nico. I am an aspiring software developer out of Ballwin Missouri. I started Coding in 2023 through a program called Web and Computer programming at a technical high school called South Tech High School.
+                    Before South Tech I had an interest in computers and had already built several of my own.
                     Throughout my time at South Tech, I've developed skills in many different programming languages, including:
                 </p>
                 <ul>
@@ -46,7 +71,16 @@
                     <li>C#</li>
                 </ul>
                 <p>Currently I am also in the process of teaching myself SwiftUI using various tools on the internet.</p>
+                <br>
                 <p>If you would like to learn more about me, my projects, goals, or if you would like to contact me please continute to explore the rest of my site!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "content-container">
+        <div class = "content">
+            <div class="text-with-image">
+                <h2>Intrests</h2>
             </div>
         </div>
     </div>

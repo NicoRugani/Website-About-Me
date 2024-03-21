@@ -1,4 +1,9 @@
 /* Nav bar styles */
+*{
+    margin:0;
+    padding:0;
+}
+
 nav {
     background-color: #333;
     top:0;
@@ -28,7 +33,7 @@ nav li a {
 
 /* Change the link color to #111 (black) on hover */
 nav li a:hover {
-    background-color: #c800ff;
+    background-color: rgb(27, 27, 27);
 }
 
 nav .active {

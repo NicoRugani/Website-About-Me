@@ -1,5 +1,5 @@
 .dark-mode{
-    background-color: rgb(61, 60, 60);
+    background-color: rgb(69, 68, 68);
     color:white;
 }
 
@@ -49,6 +49,7 @@ img {
 /* Content container styles */
 .content-container {
     position: relative;
+    margin-left: 8%;
     height: calc(100vh - 60px); /* Adjusted height to account for the height of the nav bar */
     display: flex;
     justify-content: center; /* Center the content horizontally */
@@ -57,7 +58,7 @@ img {
 }
 /* Content styles */
 .content {
-    width: 50%;
+    width: 70%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -71,7 +72,7 @@ img {
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .text-with-image {
