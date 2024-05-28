@@ -6,34 +6,6 @@
     box-sizing: border-box; /* Add box-sizing to include padding and border in the element's total width and height */
 }
 
-
-/* Image styles */
-img {
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
-    float: left;
-    margin-left: 5%;
-    margin-top: 10%;
-}
-
-h1 {
-    font-size: 15em; /* Adjust font size */
-    margin-top: 15%; /* Add margin to avoid overlap with the fixed nav */
-    text-align: center;
-    color:  #a37cf0;
-}
-
-.text-with-image {
-    overflow: hidden;
-}
-
-p {
-    font-size: 25px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
 ul {
     margin-top: 20px;
     margin-left: 20px;
@@ -44,30 +16,3 @@ li {
     line-height: 1.6;
 }
 
-/* Media queries for responsiveness */
-@media only screen and (max-width: 768px) {
-    .content {
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .content-container {
-        padding-top: 60px;
-        padding-bottom: 10px;
-    }
-
-    .content {
-        width: 90%;
-    }
-}
-
-#sports-pic {
-    float: left;
-    clear: both;
-    margin-right: 20px;
-}
-
-#content {
-    padding: 20px; /* Add padding for better spacing */
-}
