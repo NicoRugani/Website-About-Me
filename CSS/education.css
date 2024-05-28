@@ -1,5 +1,30 @@
 /* styles.css */
 
+/* Add this to your CSS file */
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.slide-in.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.slide-in-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
 .progress-container {
     position: fixed;
     top: 50%;
@@ -36,7 +61,7 @@ p {
 
 #pwest{
     margin-top:8%;
-    margin-left:10%;
+    margin-left:5%;
     box-shadow: 5% 5% 5% #918983;
 }
 
@@ -57,7 +82,7 @@ p {
 
 #pwestText p{
     color:#5b3629;
-    font-size:1.5em;
+    font-size:20px;
     width:80%;
     text-align: center;
 }
@@ -88,3 +113,32 @@ p {
     text-align: center;
     width:70%;
 }
+
+#certification{
+    float:right;
+    margin-right:10%;
+    margin-bottom:5%;
+}
+
+#certificationText{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+
+#certificationText li{
+    font-size: 2em;
+    color:#5b3629;
+}
+
+#certificationText p{
+    color:#5b3629;
+    font-size: 2em;
+
+}
+
+#certificationText h2{
+    font-size:5em;
+    color:#a37cf0;
+}
+
