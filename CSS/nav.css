@@ -1,51 +1,43 @@
-/* Nav bar styles */
-*{
-    margin:0;
-    padding:0;
-}
-
 nav {
-    background-color: #333;
-    top:0;
-    position:sticky;
+    position: fixed;
+    top: 0;
     width: 100%;
-    z-index: 1; /* Ensure nav bar stays on top of other content */
-    
+    z-index: 1;
+    background-color: white; /* Add background color to nav for better visibility */
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 nav li {
-    float: left;
     font-size: 40px;
 }
 
 nav li a {
     display: block;
-    color: white;
+    color: #918983;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 nav li a:hover {
-    background-color: rgb(27, 27, 27);
+    color: #a37cf0;
 }
 
 nav .active {
-    background-color: #c800ff;
+    font-weight: bolder;
+    color: #a37cf0;
 }
 
 nav #name {
-    float: right;
-    display: block;
-    color: white;
+    margin-left: auto;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
