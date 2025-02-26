@@ -2,6 +2,10 @@
 
 /* Add this to your CSS file */
 
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .slide-in {
     opacity: 0;
     transform: translateX(-100%);
@@ -59,19 +63,19 @@ p {
     line-height: 1.6;
 }
 
-#pwest{
+.pwest{
     margin-top:8%;
     margin-left:5%;
-    box-shadow: 5% 5% 5% #918983;
+
 }
 
-#pwestText{
+.pwestText{
     margin-top:15%;
     float:right;
     clear:both; 
 }
 
-#pwestText h2{
+.pwestText h2{
     font-size: 3em;
     padding-bottom: 2%;
     padding-left: 6%;
@@ -80,7 +84,7 @@ p {
     width:70%;
 }
 
-#pwestText p{
+.pwestText p{
     color:#5b3629;
     font-size:20px;
     width:80%;
