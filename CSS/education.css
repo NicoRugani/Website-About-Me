@@ -118,31 +118,5 @@ p {
     width:70%;
 }
 
-#certification{
-    float:right;
-    margin-right:10%;
-    margin-bottom:5%;
-}
 
-#certificationText{
-    margin-left: 10%;
-    margin-top: 10%;
-}
-
-
-#certificationText li{
-    font-size: 2em;
-    color:#5b3629;
-}
-
-#certificationText p{
-    color:#5b3629;
-    font-size: 2em;
-
-}
-
-#certificationText h2{
-    font-size:5em;
-    color:#a37cf0;
-}
 

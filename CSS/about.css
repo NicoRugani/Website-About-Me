@@ -8,27 +8,56 @@
     width: 50%;           /* The width of the content box */
     height: 15%;          /* The height of the content box */
     padding-top: 3%;         /* Padding inside the box */
-
 }
 
 .box {
     width: 60%;           /* The width of the content box */
-    height: 10%;          /* The height of the content box */
+    height: auto;          /* Auto adjusts the height based on content */
     padding: 1%;          /* Padding inside the box */
-    margin:1%;           /* Margin outside the box */
+    margin: 1%;           /* Margin outside the box */
 }
 
-.intro p{
+/* Flexbox layout for certification section */
+#certifications {
+    display: flex;         /* Enables flexbox */
+    align-items: center;   /* Centers the content vertically */
+    justify-content: flex-start; /* Aligns content to the left */
+}
+
+#certification {
+    margin-right: 20px; /* Space between image and text */
+    width: 300px; /* Adjust the image size */
+}
+
+#certificationText {
+    flex-grow: 1;  /* Makes the text section take up the remaining space */
+}
+
+#certificationText li {
+    font-size: 1.5em;
+    color: #5b3629;
+}
+
+#certificationText p {
+    color: #5b3629;
+    font-size: 1.5em;
+}
+
+#certificationText h2 {
+    font-size: 3em;
+    color: #a37cf0;
+}
+
+.intro p {
     padding-top: 1%;
     color: #5b3629;
     font-size: 1.5em;
     line-height: 1.5;
 }
 
-.intro h1{
+.intro h1 {
     color: #a37cf0;
     font-size: 3em;
     text-align: center;
     justify-content: center;
 }
-
