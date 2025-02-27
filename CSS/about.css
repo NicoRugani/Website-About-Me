@@ -1,0 +1,34 @@
+/* Universal box-sizing */
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in the width/height */
+}
+
+.centered-box {
+    margin: 0 auto; /* Centers the box horizontally */
+    width: 50%;           /* The width of the content box */
+    height: 15%;          /* The height of the content box */
+    padding-top: 3%;         /* Padding inside the box */
+
+}
+
+.box {
+    width: 60%;           /* The width of the content box */
+    height: 10%;          /* The height of the content box */
+    padding: 1%;          /* Padding inside the box */
+    margin:1%;           /* Margin outside the box */
+}
+
+.intro p{
+    padding-top: 1%;
+    color: #5b3629;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.intro h1{
+    color: #a37cf0;
+    font-size: 3em;
+    text-align: center;
+    justify-content: center;
+}
+
