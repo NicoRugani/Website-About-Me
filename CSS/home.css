@@ -40,20 +40,16 @@ img {
     box-shadow: 5px 5px 10px #918983;
     float: left;
     margin-left: 5%;
-    margin-top: 5%;
-    animation: fadeIn 2s forwards; /* Apply the fade-in animation */
-    animation-delay: 0.5s; /* Synchronize the animation delay */
+    margin-top: 3%;
     z-index: 1;
 }
 
 h1 {
     font-size: 1500%; /* Adjust font size */
-    margin-top: 8%; /* Add margin to avoid overlap with the fixed nav */
+    margin-top: 3%; /* Add margin to avoid overlap with the fixed nav */
     text-align: center;
     color: #a37cf0;
     text-shadow: 5px 5px 10px #918983;
-    animation: fadeIn 2s forwards; /* Apply the fade-in animation */
-    animation-delay: 0.5s; /* Synchronize the animation delay */
     z-index: -1;
     background-color: rgba(255, 255, 255, 0);
 }
@@ -99,8 +95,6 @@ li {
 
 #content {
     padding: 20px; /* Add padding for better spacing */
-    animation: fadeIn 2s forwards; /* Apply the fade-in animation */
-    animation-delay: 0.5s; /* Synchronize the animation delay */
 }
 
 #welcomeText {
@@ -115,5 +109,5 @@ li {
     font-weight: bold;
     opacity: 0; /* Start with the element invisible */
     animation: slideIn 1s forwards, fadeIn 1s forwards; /* Apply both slide-in and fade-in animations */
-    animation-delay: 1s; /* Delay the animation to start after the fade-in animations finish */
+    animation-delay: 0.5s; /* Delay the animation to start after the fade-in animations finish */
 }

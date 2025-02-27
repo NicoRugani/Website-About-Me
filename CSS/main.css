@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Add box-sizing to include padding and border in the element's total width and height */
+    overflow-x: hidden;
 }
 
 ul {
